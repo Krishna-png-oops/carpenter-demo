@@ -1,0 +1,6 @@
+{
+  "name": "Carpenter Hub",
+  "description": "Premium carpentry, modular kitchen, and luxury interior design services by Ranjodh Singh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Sophisticated Dark Theme Custom Utilities */
+.sophisticated-dark-bg {
+  background-color: #0F0F0F;
+  background-image: 
+    radial-gradient(circle at 85% 15%, rgba(197, 160, 89, 0.12) 0%, transparent 45%), 
+    radial-gradient(circle at 15% 85%, rgba(42, 37, 34, 0.22) 0%, transparent 50%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #F1D592 50%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-luxury {
+  border-color: rgba(197, 160, 89, 0.2);
+}
+
+.border-luxury-subtle {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.bg-luxury-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bg-luxury-card-hover:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px -15px rgba(197, 160, 89, 0.15);
+}
+
+.text-luxury-gold {
+  color: #C5A059;
+}
+
+.bg-luxury-gold {
+  background-color: #C5A059;
+}
+
+.btn-luxury-outline {
+  border: 1px solid #C5A059;
+  color: #C5A059;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury-outline:hover {
+  background-color: #C5A059;
+  color: #0F0F0F;
+  box-shadow: 0 0 20px rgba(197, 160, 89, 0.3);
+}
+
+.btn-luxury-solid {
+  background: linear-gradient(135deg, #C5A059, #8E6D3A);
+  color: #000000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury-solid:hover {
+  background: linear-gradient(135deg, #F1D592, #C5A059);
+  box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+  transform: translateY(-1px);
+}
+
+.consultation-gold-grad {
+  background: linear-gradient(135deg, #C5A059 0%, #8E6D3A 100%);
+}
+
+.whatsapp-glow {
+  background-color: #25D366;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-glow:hover {
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.5);
+  transform: scale(1.05);
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Luxury glow effects */
+.glow-card {
+  position: relative;
+}
+
+.glow-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to bottom right, rgba(197, 160, 89, 0.2), transparent, rgba(197, 160, 89, 0.05));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask-composite: exclude;
+  mask-composite: exclude;
+  pointer-events: none;
+}
